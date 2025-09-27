@@ -1,5 +1,9 @@
 # FB18231015 - SwiftUI: Content outside of SafeAreaPadding not interactive
 
+> [!NOTE]
+> Fixed in iOS 26.0 Release. Same issue exists in macOS though.
+
+
 ## Scenario
 
 A SwiftUI app with a ScrollView that has a `.safeAreaInset()` and some of the content has `.ignoresSafeArea()` set. The content is filled with buttons which change color on interaction.
@@ -21,4 +25,5 @@ The example shows the described scenario.
 
 ## Tested on
 
-	- Xcode Version 26.0 (17A5241e) on iOS 26.0 beta (23A5260k)
+	- Xcode Version 26.0 (17A5241e) on iOS 26.0 beta (23A5260k) (fixed in iOS 26 Release).
+    - macOS 26.0 has the same issue.
